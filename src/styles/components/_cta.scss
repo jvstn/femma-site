@@ -1,5 +1,6 @@
 .cta {
-  background-color: $ctaBackgroundColor;
+  justify-self: center;
+  background-color: transparent;
   text-align: center;
   margin: 0 auto;
   padding: 1em;
@@ -7,4 +8,18 @@
     font-size: 1.5rem;
     font-weight: 500;
   }
+}
+
+.waitlist-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.waitlist-group input {
+  border-radius: 1rem;
+  height: 8vh;
+  width: 20vw;
+  margin-right: 5vw;
+  border: none;
 }

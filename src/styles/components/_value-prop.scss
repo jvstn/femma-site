@@ -1,46 +1,20 @@
+.value-prop {
+  background-image: url(../assets/octo-top-down.jpg),
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-size: 67%;
+  height: 100vh;
+  margin-top: -15vh;
+  padding: 15vh;
+
+}
 .value-prop-content {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  row-gap: 0.25em;
-  margin-bottom: 2em;
-  padding: 2em;
-  max-width: $maxContainerWidth;
-  margin: 0 auto;
-}
-
-.main-message {
-  grid-column: span 8;
-  grid-row: span 5;
   display: flex;
-  flex-direction: column;
+  align-content: center;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  p {
-    margin-top: 0;
-  }
-}
 
-.main-subtitle {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.main-photo {
-  grid-column: span 8;
-  grid-row: span 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url("../assets/main-photo.svg") no-repeat top;
-  background-size: 100% 100%;
-  height: 100%;
-  padding: 0;
-  width: 100%;
-  max-width: 50rem;
-  margin: 0 auto;
 }
 
 @include breakpoint("from-tablet-l") {
@@ -59,8 +33,8 @@
   }
 
   .main-message {
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     button {
       margin: 0;
     }

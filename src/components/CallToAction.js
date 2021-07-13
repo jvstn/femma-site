@@ -5,9 +5,14 @@ const CallToAction = props => {
 
   return (
     <section className="cta">
-      <h1>Try our awesome product.</h1>
-      <p>There&apos;s nothing to lose. 30 days free trial.</p>
-      <Button label="Get Started" />
+      <h1>FemMA</h1>
+      <p>The most fun way to get fit</p>
+      <div class="waitlist-group">
+        <form netlify>
+          <input type="email" name="email" />
+        </form>
+        <Button label="Join the Club" />
+      </div>
     </section>
   )
 };
