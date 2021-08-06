@@ -2,15 +2,15 @@
 $maxContainerWidth: 75rem;
 
 // colors
-$mainColor: #00EB50;
-$secondaryColor: rgba(242,242,242, 0.4);
+$mainColor: #153B2C;
+$secondaryColor: #dad7cd;
 $backgroundColor: #000;
-$textColor: #fff
-;
+$textColor: #fff;
+$accentColor: #E2C29A;
 
 // can get more granular
 $containerBackgroundColor: $backgroundColor;
-$navColor: $backgroundColor;
+$navColor: $secondaryColor;
 $navLabelsColor: $textColor;
 $socialProofBackgroundColor: #f4eeff;
 $productBenefitsColor: $secondaryColor;

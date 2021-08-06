@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Button = ({ label }) => (
-  <button className="button">
-    {label}
-  </button>
+  <input type="submit" className="button" value={label} />
 );
 
 export default Button;

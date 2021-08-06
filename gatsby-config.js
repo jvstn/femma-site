@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Femma`,
+    title: `FemMA`,
     description: `Workout with top UFC athletes.`,
     siteUrl: `https://www.femma.com`,
     author: `Justin McFadden`,
@@ -8,6 +8,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

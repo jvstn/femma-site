@@ -1,11 +1,11 @@
 .value-prop {
-  background-image: url(../assets/octo-top-down.jpg),
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url(../assets/octogon.jpg),
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(4, 8, 18, 1));
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 20% 14%;
   background-blend-mode: overlay;
-  background-size: 67%;
-  height: 100vh;
+  background-size: 100% 135%;
+  height: 120vh;
   margin-top: -15vh;
   padding: 15vh;
 
@@ -17,26 +17,17 @@
 
 }
 
-@include breakpoint("from-tablet-l") {
-  .value-prop-content {
-    margin: 2rem auto 3rem auto;
+@include breakpoint("phone") {
+  .value-prop {
+    height: 140vh;
+    background-size: 200% 120%;
+    background-position: 50% -20%;
   }
 
-  .main-message {
-    grid-column: span 4;
-    grid-row: span 8;
-  }
-
-  .main-photo {
-    grid-column: span 4;
-    grid-row: span 8;
-  }
-
-  .main-message {
-    align-items: center;
-    text-align: center;
-    button {
-      margin: 0;
+  @include breakpoint("phone-small") {
+    .value-prop {
+      background-size: 200% 125%;
+      height: 110vh;
     }
   }
 }

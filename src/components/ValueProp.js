@@ -9,7 +9,6 @@ const ValueProp = props => {
       <div className="value-prop-content">
         <div className="main-message">
           <CallToAction />
-          
         </div>
       </div>
     </section>
