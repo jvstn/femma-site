@@ -36,7 +36,6 @@ let backdropClass = "backdrop"
 
   return (
     <header>
-      <Backdrop activeClass={backdropClass} click={burgerToggle} />
       <nav className={scrolled ? "navbar active" : "navbar"}>
         <div className="nav-belt">
           <div>
@@ -54,16 +53,19 @@ let backdropClass = "backdrop"
           </div>
           <ul className={navClasses} onClick={() => setIsOpen(false)}>
             <li className={navItemClasses}>
-              <a href="#about" style={scrolled && !isOpen ? { color: "black" } : {color: "white"}}>
+              <a
+                href="#about"
+                style={scrolled ? { color: "black" } : { color: "white" }}
+              >
                 About
               </a>
             </li>
             <li className={navItemClasses}>
-              <a href="#contact" style={scrolled && !isOpen ? { color: "black" } : null}>
+              <a href="#contact" style={scrolled ? { color: "black" } : null}>
                 Contact
               </a>
             </li>
-  {console.log(isOpen)}
+            {console.log(isOpen)}
             <li className={`${navItemClasses} nav-item-bold`}>
               <a href="#contact">Join the Club</a>
             </li>
