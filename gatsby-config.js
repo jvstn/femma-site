@@ -27,7 +27,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#675CE2`,
         display: `standalone`,
-        icon: `src/assets/logo.svg`, // This path is relative to the root of the site.
+        icon: `src/assets/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
