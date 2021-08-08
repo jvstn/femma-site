@@ -31,7 +31,7 @@ const ProductBenefits = props => {
       <div id="contact" className="product-benefit-contact">
         <form netlify>
           <h1>Join The Club</h1>
-          <input type="email" name="email" placeholder="Add your email here" />
+          <input type="email" name="email"  />
           <Button className="join" label="Join the Club" />
         </form>
       </div>
