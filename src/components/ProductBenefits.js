@@ -29,9 +29,16 @@ const ProductBenefits = props => {
         </div>
       </div>
       <div id="contact" className="product-benefit-contact">
-        <form netlify>
+        <form
+          name="Waitlist"
+          netlify-honeypot="bot-field"
+          method="POST"
+          data-netlify="true"
+        >
           <h1>Join The Club</h1>
-          <input type="email" name="email"  />
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="Waitlist" />
+          <input type="email" name="email" />
           <Button className="join" label="Join the Club" />
         </form>
       </div>
