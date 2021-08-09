@@ -40,6 +40,10 @@ video {
   display: inline-block;
 }
 
+input {
+  color: black;
+}
+
 @media only screen and (max-width: 40rem) {
   body {
     overflow-x: hidden;
